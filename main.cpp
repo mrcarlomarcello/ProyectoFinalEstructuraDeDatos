@@ -1,27 +1,17 @@
 #include <iostream>
-using namespace std;
+#include "Utils.h"
+#include "Huffman.h"
 
+using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-bool EsUnNumero(const char* cadena)
-{
-  for( ; *cadena; ++cadena )
-  {
-    // En cuanto un caracter no sea numérico
-    if( !std::isdigit(*cadena) )
-      return false;
-  }
-
-  return true;
-}
-
 int main(int argc, char** argv) {
-	
+	Utils util;
 	int num = 0;
 	char menu[5];
-	int opcion;
 	bool continuar = true;
 	bool seguir = true;
+    Huffman* huffman = new Huffman();
 	
 	 do{
         cout << "\nMenú Principal"
@@ -30,11 +20,11 @@ int main(int argc, char** argv) {
              << "\n3. Salir" << endl;
         cin >> menu;
 
-		if (!EsUnNumero(menu) || (stoi(menu) > 3))
-			num = 4;
+		if (!util.EsUnNumero(menu) || (stoi(menu) > 3))
+            {num = 4;}
 		else
-			num = stoi(menu);
-			
+            {num = stoi(menu);}
+
 		switch (num){
 			case 1:
 			{
@@ -45,15 +35,22 @@ int main(int argc, char** argv) {
 		             << "\n3. Regresar al Menu Principal" << endl;
 		        	cin >> menu;
 	
-					if (!EsUnNumero(menu) || (stoi(menu) > 3))
-						num = 4;
+					if (!util.EsUnNumero(menu) || (stoi(menu) > 3))
+                        {num = 4;}
 					else
-						num = stoi(menu);
-					
+                        {num = stoi(menu);}
+
 					switch(num){
 						case 1:
 						{
 							//code
+                            cout << endl;
+                            string prueba = util.leerArchivo("prueba.txt");
+                            int tam = huffman->contarCaracteres(prueba);
+                            cout << "Tamaño : " << tam << endl;
+                            cout << prueba << endl;
+                            cout << endl;
+                            cout << "Funcionó?" << endl;
 							seguir = true;
 							break;	
 						}
@@ -74,7 +71,8 @@ int main(int argc, char** argv) {
 							seguir = true;
 							break;
 						}
-					}	
+					}
+
 				}while (seguir);
 				break;
 			}
@@ -88,10 +86,10 @@ int main(int argc, char** argv) {
 		             << "\n4. Regresar al Menu Principal" << endl;
 		        	cin >> menu;
 	
-					if (!EsUnNumero(menu) || (stoi(menu) > 4))
-						num = 5;
+					if (!util.EsUnNumero(menu) || (stoi(menu) > 4))
+                        {num = 5;}
 					else
-						num = stoi(menu);
+                        {num = stoi(menu);}
 					
 					switch(num){
 						case 1:
