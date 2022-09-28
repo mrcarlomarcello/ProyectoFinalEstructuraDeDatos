@@ -5,10 +5,15 @@ using namespace std;
 
 Vertice::Vertice(){
 	this->etiqueta="";
-	this->peso="";
+	this->peso=0;
 }
 
-Vertice::Vertice(string etiqueta, string peso){
+Vertice::Vertice(int peso){
+	this->peso=peso;
+	this->etiqueta="";
+}
+
+Vertice::Vertice(string etiqueta, int peso){
 	this->etiqueta=etiqueta;
 	this->peso=peso;
 }
@@ -17,7 +22,7 @@ string Vertice::getEtiqueta(){
 	return this->etiqueta;
 }
 
-string Vertice::getPeso(){
+int Vertice::getPeso(){
 	return this->peso;
 }
 
@@ -25,6 +30,6 @@ void Vertice::setEtiqueta(string etiqueta){
 	this->etiqueta=etiqueta;
 }
 
-void Vertice::setPeso(string peso){
+void Vertice::setPeso(int peso){
 	this->peso=peso;
 }

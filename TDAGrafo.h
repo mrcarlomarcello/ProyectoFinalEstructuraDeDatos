@@ -16,7 +16,8 @@ class TDAGrafo{
 		Vertice** getMatriz();
 		void setSize(int);
 		void setMatriz(Vertice**);
-
+		void llenado_prueba();
+		
 	protected:
 		int size;
 		Vertice** matriz;

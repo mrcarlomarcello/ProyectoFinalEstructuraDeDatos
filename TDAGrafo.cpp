@@ -1,5 +1,7 @@
 #include "TDAGrafo.h"
+#include<stdlib.h>
 #include <iostream>
+#include<time.h>
 using namespace std;
 
 TDAGrafo::TDAGrafo(){
@@ -32,4 +34,16 @@ void TDAGrafo::setMatriz(Vertice** matriz){
 
 void TDAGrafo::setSize(int size){
 	this->size=size;
+}
+
+void TDAGrafo::llenado_prueba(){
+	srand(time(NULL));
+	int pesoR;
+	for(int i= 0; i<size; i++){
+		for (int j = 0; j<size; j++){
+			pesoR=1+rand()%(10-1);
+			Vertice temporal = Vertice(pesoR);
+			this->matriz[i][j]=temporal;
+		}
+	}	
 }

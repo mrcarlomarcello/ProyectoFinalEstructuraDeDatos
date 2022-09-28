@@ -7,15 +7,16 @@ using std::string;
 class Vertice{
 	public:
 		Vertice();
-		Vertice(string, string);
+		Vertice(int);
+		Vertice(string, int);
 		string getEtiqueta();
-		string getPeso();
-		void setPeso(string);
+		int getPeso();
+		void setPeso(int);
 		void setEtiqueta(string);
 		
 	protected:
 		string etiqueta;
-		string peso;	
+		int peso;	
 };
 
 #endif //VERTICE_H
