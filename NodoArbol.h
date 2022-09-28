@@ -5,7 +5,8 @@
 
 #include "Object.h"
 
-class NodoArbol
+//decime que funciona
+class NodoArbol : public Object
 {
 	public:
 		NodoArbol();

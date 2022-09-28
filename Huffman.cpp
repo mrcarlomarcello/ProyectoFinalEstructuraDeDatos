@@ -4,7 +4,7 @@
 
 #include "Huffman.h"
 #include <iostream>
-
+#include "Simbolo.h"
 
 using namespace std;
 
@@ -13,6 +13,7 @@ Huffman::Huffman() {
     this->hojasHuffman = new LinkedList();
     this->size=0;
     this->maxFreq=0;
+    this->colaDeArbol = new LinkedQueue();
 }
 
 int Huffman::contarCaracteres(string _input) {
@@ -39,6 +40,7 @@ bool Huffman::crearHojas(string _input) {
         if(i==0){
             this->size+=1;
             hojasHuffman->inserta(valor,this->size);
+            //hojasHuffman->append(valor);
         }else {
             //query compara tamaño de objeto con tamaño de objeto
             int query = hojasHuffman->localiza(valor);
@@ -52,14 +54,16 @@ bool Huffman::crearHojas(string _input) {
             }else{
                 this->size+=1;
                 hojasHuffman->inserta(valor,this->size);
+                //hojasHuffman->append(valor);
             }
 
         }
     }
+
     hojasHuffman->imprimir_lista();
-    cout << "imprimio la lista" << endl;
-    imprimirHojas();
-    cout << "imprimio las hojas" << endl;
+    //cout << "imprimio la lista" << endl;
+    //imprimirHojas();
+    //cout << "imprimio las hojas" << endl;
     return false;
 
 }
@@ -84,12 +88,52 @@ int Huffman::getSize() {
     return this->size;
 }
 
-bool Huffman::creaArbol() {
+NodoArbol* Huffman::creaArbol() {
 
     Nodo* temp = this->hojasHuffman->getInicio();
 
-    do{
+    //Arma las hojas del arbol
+    for (int i = 1; i < this->maxFreq ; ++i) {
 
-    }while(treesize>1);
+        for (int j = 0; j < this->size; ++j) {
+            Simbolo* tempValor = (Simbolo*)temp->getItem();
+            if(tempValor->getFreq() == i)
+                this->colaDeArbol->pone_en_cola(temp->getItem());
+            temp = temp->getSiguiente();
+        }
+        temp = this->hojasHuffman->getInicio();
+    }
+
+    this->colaDeArbol->imprime_cola();
+
+    //** PROBADOR DE QUE LA COLA VA EN ORDEN
+    do{
+        Simbolo* tempValor = (Simbolo*)this->colaDeArbol->saca_de_cola();
+        cout << "Saque para probar: " << tempValor->toString() << "  con frecuencia:  " <<tempValor->getFreq() << endl;
+    } while (!colaDeArbol->vacia());
+
+
+    //Huffman Node tentativo pt1.
+    //LinkedQueue* huffmanTree = new LinkedQueue();
+    //**
+    //do{
+    //    Simbolo* tempValor = (Simbolo*)this->colaDeArbol->saca_de_cola();
+        //NodoArbol* nodoArbolTemporal;
+        //nodoArbolTemporal->setItem(tempValor);
+        //huffmanTree->pone_en_cola(nodoArbolTemporal);
+    //   cout << "Saque para probar: " << tempValor->toString() << "  con frecuencia:  " <<tempValor->getFreq() << endl;
+    //} while (!colaDeArbol->vacia());
+
+    /***
+    do{
+        NodoArbol* nodoArbolTemporal = (NodoArbol*)huffmanTree->saca_de_cola();
+        Simbolo* tempValor = (Simbolo*)nodoArbolTemporal->getItem();
+        cout << "Saque para probar: Del ArbolHUFFMAN" << tempValor->toString() << "  con frecuencia:  " <<tempValor->getFreq() << endl;
+    }while(!huffmanTree->vacia());
+    ***/
+
+
+
+    return NULL;
 
 }

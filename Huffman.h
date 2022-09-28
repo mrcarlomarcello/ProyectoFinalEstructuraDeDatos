@@ -10,6 +10,7 @@
 #include "LinkedList.h"
 #include "Simbolo.h"
 #include "NodoArbol.h"
+#include "LinkedQueue.h"
 
 class Huffman : public  TDAArbol{
     public:
@@ -25,6 +26,7 @@ class Huffman : public  TDAArbol{
         LinkedList* hojasHuffman;
         int size;
         int maxFreq;
+        LinkedQueue* colaDeArbol;
 };
 
 

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Utils.h"
 #include "Huffman.h"
+#include "NodoArbol.h"
 
 using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
@@ -53,8 +54,13 @@ int main(int argc, char** argv) {
                             cout << "Funcionó?" << endl;
 
                             huffman->crearHojas(prueba);
-                            huffman->imprimirHojas();
+
                             cout << "Estos son los nodos creados: " << huffman->getSize() << endl;
+                            //huffman->imprimirHojas();
+
+                            cout << "creamos el Arbol: " << endl;
+
+                            NodoArbol* huffmanTree = huffman->creaArbol();
 
 							seguir = true;
 							break;	

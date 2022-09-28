@@ -7,7 +7,6 @@ NodoArbol::NodoArbol()
 	this->hijoIzquierdo = NULL;
     this->hijoDerecho = NULL;
 	this->item = NULL;
-	 
 }
 
 NodoArbol::~NodoArbol()
