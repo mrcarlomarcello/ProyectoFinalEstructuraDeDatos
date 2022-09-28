@@ -7,19 +7,24 @@
 #define HUFFMAN_H
 
 #include "TDAArbol.h"
-#include "HojaHuffman.h"
-#include "Nodo.h"
+#include "LinkedList.h"
+#include "Simbolo.h"
+#include "NodoArbol.h"
 
 class Huffman : public  TDAArbol{
     public:
         Huffman();
         virtual int contarCaracteres(string);
         virtual bool crearHojas(string);
+        virtual void imprimirHojas();
+        virtual int getSize();
+        virtual NodoArbol* creaArbol();
 
     private:
         string frase;
-        Nodo* inicio;
-
+        LinkedList* hojasHuffman;
+        int size;
+        int maxFreq;
 };
 
 

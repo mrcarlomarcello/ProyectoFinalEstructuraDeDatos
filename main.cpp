@@ -51,6 +51,11 @@ int main(int argc, char** argv) {
                             cout << prueba << endl;
                             cout << endl;
                             cout << "Funcionó?" << endl;
+
+                            huffman->crearHojas(prueba);
+                            huffman->imprimirHojas();
+                            cout << "Estos son los nodos creados: " << huffman->getSize() << endl;
+
 							seguir = true;
 							break;	
 						}

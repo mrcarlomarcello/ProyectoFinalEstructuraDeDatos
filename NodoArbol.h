@@ -11,7 +11,7 @@ class NodoArbol
 		NodoArbol();
 		~NodoArbol();
 		
-		void setHijoIzquierdo*);
+		void setHijoIzquierdo(NodoArbol*);
 		void setHijoDerecho(NodoArbol*);
 		void setItem(Object*);
 		Object* getItem();
