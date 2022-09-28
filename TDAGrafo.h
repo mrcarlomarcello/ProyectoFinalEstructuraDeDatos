@@ -1,16 +1,25 @@
 #pragma once
-//
-// Created by shello on 09-27-22.
-//
 
 #ifndef TDAGRAFO_H
 #define TDAGRAFO_H
 
-#include "Object.h"
+#include "Vertice.h"
 
-class TDAGrafo {
 
+
+class TDAGrafo{
+	public:
+		TDAGrafo();
+		TDAGrafo(int);
+		
+		int getSize();
+		Vertice** getMatriz();
+		void setSize(int);
+		void setMatriz(Vertice**);
+
+	protected:
+		int size;
+		Vertice** matriz;
 };
-
 
 #endif //TDAGRAFO_H
