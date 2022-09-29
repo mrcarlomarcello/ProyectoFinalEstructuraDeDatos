@@ -46,8 +46,8 @@ int main(int argc, char** argv) {
 						{
 							//code
                             cout << endl;
-                            //string texto = util.leerArchivo("prueba.txt");
-                            string texto = util.leerArchivo("testcorto.txt");
+                            string texto = util.leerArchivo("prueba.txt");
+                            //string texto = util.leerArchivo("testcorto.txt");
                             int tam = huffman->contarCaracteres(texto);
                             cout << "Tamaño : " << tam << endl;
                             cout << endl;
