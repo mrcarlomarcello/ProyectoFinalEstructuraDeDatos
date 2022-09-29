@@ -33,14 +33,11 @@ string Huffman::crearHojas(string _input) {
     cout << "Creando Hojas de: " << _input.length() << "Caracteres" << endl;
     cout << "Vamos a hacer la tabla de valores repetidos" << endl;
 
-
     for (int i = 0; i < _input.length(); ++i) {
 
         Simbolo* valor = new Simbolo();
         valor->setSimbolo(_input[i]);
         valor->setFreq(1);
-
-
 
         if(i==0){
             this->size+=1;
@@ -57,7 +54,7 @@ string Huffman::crearHojas(string _input) {
                 int freqTemp = temp->getFreq()+1;
                 temp->setFreq(freqTemp);
 
-                //revisamos si es la mayor
+                //revisamos si es la mayor Frecuencia registrada
                 if(freqTemp >= this->maxFreq)
                     this->maxFreq=freqTemp;
 
@@ -68,13 +65,10 @@ string Huffman::crearHojas(string _input) {
                 this->size+=1;
                 cout << "Insertamos el siguiente Valor: " << valor->getSimbolo() <<  " con la siguiente frecuencia: " << to_string(valor->getFreq()) << endl;
                 hojasHuffman->inserta(valor,this->size);
-                //hojasHuffman->append(valor);
             }
         }
     }
-
     return _input;
-
 }
 
 void Huffman::imprimirHojas() {
@@ -99,7 +93,6 @@ NodoArbol* Huffman::creaArbol() {
 
     //Arma las hojas del arbol
     Nodo* temp = this->hojasHuffman->getInicio();
-
     for (int i = 0; i <= this->maxFreq ; ++i) {
 
         for (int j = 0; j < this->size; ++j) {
@@ -111,11 +104,10 @@ NodoArbol* Huffman::creaArbol() {
         temp = this->hojasHuffman->getInicio();
     }
     cout << "HACE HOJAS!!!!!!!!!" << endl;
+    //Arma las hojas del arbol
 
-
-    //Huffman Node tentativo pt1.
+    //CREA UN ARBOL -> PRIMER NIVEL MULTIPLES NODOS HUFFMAN
     LinkedQueue* huffmanTree = new LinkedQueue();
-
     do{
         Simbolo* tempValor = (Simbolo*)this->colaDeArbol->saca_de_cola();
         NodoArbol* nodoArbolTemporal = new NodoArbol();
@@ -123,10 +115,10 @@ NodoArbol* Huffman::creaArbol() {
         huffmanTree->pone_en_cola(nodoArbolTemporal);
         //cout << "Saque nodos y convertí a NODOS ARBOL: " << tempValor->toString() << "  con frecuencia:  " <<tempValor->getFreq() << endl;
     } while (!colaDeArbol->vacia());
-
     cout << "HACE NODOS HUFFMAN!!!!!!!!!" << endl;
+    //CREA UN ARBOL -> PRIMER NIVEL MULTIPLES NODOS HUFFMAN
 
-    //tenemos huffmanTree de puras hojas - Hace un solo nodo de todos los Nodos pt2.
+    //CREA ARBOL CON UN SOLO NODO
     do{
         NodoArbol* nodoArbolTemporal1 = (NodoArbol*)huffmanTree->saca_de_cola();
 
@@ -134,15 +126,10 @@ NodoArbol* Huffman::creaArbol() {
 
             NodoArbol* nodoArbolTemporal2 = (NodoArbol*)huffmanTree->saca_de_cola();
             Simbolo* nodeSimbolo = new Simbolo();
-            int frecuencia = ((Simbolo*)nodoArbolTemporal1->getItem())->getFreq() +  ((Simbolo*)nodoArbolTemporal2->getItem())->getFreq();
-            cout << "FRECUENCIA:" <<  frecuencia << endl;
+            int frecuencia = ((Simbolo*)nodoArbolTemporal1->getItem())->getFreq()
+                    + ((Simbolo*)nodoArbolTemporal2->getItem())->getFreq();
 
-            //OJO VACIO DE CHAR o INIT
-            if(!huffmanTree->vacia())
-                nodeSimbolo->setSimbolo('\0');
-            else
-                nodeSimbolo->setSimbolo('0');
-
+            nodeSimbolo->setSimbolo('\0');
             nodeSimbolo->setFreq(frecuencia);
 
             NodoArbol* nodoArbolTemporal3 = new NodoArbol();
@@ -150,33 +137,14 @@ NodoArbol* Huffman::creaArbol() {
             nodoArbolTemporal3->setHijoIzquierdo(nodoArbolTemporal1);
             nodoArbolTemporal3->setHijoDerecho(nodoArbolTemporal2);
             huffmanTree->pone_en_cola(nodoArbolTemporal3);
-            cout << "ARME UN : ArbolHUFFMAN Node" << " Con frecuencia de " << frecuencia <<endl;
-
-        }else{
-            cout << "OJO ___ UBICACION DE LISTA DE CARACTERES!!!!!!!!!" << endl;
-            this->hojasHuffman->imprimir_lista();
-
-            // Imprimir Codigos
-            Nodo* prueba2 = this->hojasHuffman->getInicio();
-
-            do{
-                this->codeGenerated = "";
-                string texto = prueba2->getItem()->toString();
-                cout << "Buscando este codigo de char " << texto << endl;
-                string s = BusquedaProfunda(nodoArbolTemporal1, texto);
-                cout << this->codeGenerated << endl;
-                cout << "Código de Huffmann creado: " << s << endl;
-                prueba2 = prueba2->getSiguiente();
-
-            }while(prueba2!=NULL);
-
-
+            cout << "ARME UN NODO HUFFMAN: " << " Con frecuencia de " << frecuencia <<endl;
+        }
+        else{
             return nodoArbolTemporal1;
         }
 
-
-
     }while(!huffmanTree->vacia());
+    //CREA ARBOL CON UN SOLO NODO
 
     return NULL;
 
@@ -184,7 +152,7 @@ NodoArbol* Huffman::creaArbol() {
 
 string Huffman::BusquedaProfunda(NodoArbol* arbolTemp, string _char){
 
-    cout << "Prueba de Char Recibido: " << _char << endl;
+
     if( arbolTemp->getHijoIzquierdo() ){
         this->generatingCode.append("0");
         BusquedaProfunda(arbolTemp->getHijoIzquierdo(), _char);
@@ -212,21 +180,21 @@ string Huffman::BusquedaProfunda(NodoArbol* arbolTemp, string _char){
 
 }
 
-void Huffman::imprimirFrase(NodoArbol* _Arbol, string secreto){
+void Huffman::decodificadorHuffman(NodoArbol* _Arbol, string secreto){
     NodoArbol* temp = _Arbol;
 
     for (int i = 0; i < secreto.length() ; ++i) {
-
+        //selector de nodo
         if(secreto[i] == '0'){
             temp = temp->getHijoIzquierdo();
         }
-
-
         if(secreto[i] == '1')
         {
             temp = temp->getHijoDerecho();
         }
+        //selector de nodo
 
+        //Si tocamos Fondo Imprime y vuelve a salir al primer nodo
         if( temp->getHijoIzquierdo() == NULL && temp->getHijoDerecho() == NULL){
             Simbolo* temporal = (Simbolo*)temp->getItem();
             cout << temporal->getSimbolo();
@@ -234,12 +202,12 @@ void Huffman::imprimirFrase(NodoArbol* _Arbol, string secreto){
         }
 
     }
-    
+
     cout << endl;
 
 }
 
-string Huffman::ArmarCodigo(NodoArbol * _Arbol, string _texto) {
+string Huffman::codificarTexto(NodoArbol * _Arbol, string _texto) {
 
     string codigoSecreto = "";
     for (int i = 0; i < _texto.length(); ++i) {

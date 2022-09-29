@@ -1,0 +1,1138 @@
+
+Menú Principal
+1. Algoritmos sobre Arboles
+2. Algoritmos sobre Grafos
+3. Salir
+
+Algoritmos sobre Arboles
+1. Codificador de Huffman
+2. Decodificador de Huffman
+3. Regresar al Menu Principal
+
+Tiene un total de:224Characteres
+ [ 0 ]  [ E ] 
+ [ 1 ]  [ s ] 
+ [ 2 ]  [ t ] 
+ [ 3 ]  [ e ] 
+ [ 4 ]  [   ] 
+ [ 5 ]  [ e ] 
+ [ 6 ]  [ s ] 
+ [ 7 ]  [   ] 
+ [ 8 ]  [ u ] 
+ [ 9 ]  [ n ] 
+ [ 10 ]  [   ] 
+ [ 11 ]  [ d ] 
+ [ 12 ]  [ o ] 
+ [ 13 ]  [ c ] 
+ [ 14 ]  [ u ] 
+ [ 15 ]  [ m ] 
+ [ 16 ]  [ e ] 
+ [ 17 ]  [ n ] 
+ [ 18 ]  [ t ] 
+ [ 19 ]  [ o ] 
+ [ 20 ]  [   ] 
+ [ 21 ]  [ d ] 
+ [ 22 ]  [ e ] 
+ [ 23 ]  [   ] 
+ [ 24 ]  [ p ] 
+ [ 25 ]  [ r ] 
+ [ 26 ]  [ u ] 
+ [ 27 ]  [ e ] 
+ [ 28 ]  [ b ] 
+ [ 29 ]  [ a ] 
+ [ 30 ]  [ a ] 
+ [ 31 ]  [ a ] 
+ [ 32 ]  [ a ] 
+ [ 33 ]  [ a ] 
+ [ 34 ]  [ a ] 
+ [ 35 ]  [ a ] 
+ [ 36 ]  [ a ] 
+ [ 37 ]  [ a ] 
+ [ 38 ]  [ a ] 
+ [ 39 ]  [ a ] 
+ [ 40 ]  [ a ] 
+ [ 41 ]  [ a ] 
+ [ 42 ]  [ a ] 
+ [ 43 ]  [ a ] 
+ [ 44 ]  [ a ] 
+ [ 45 ]  [ a ] 
+ [ 46 ]  [ a ] 
+ [ 47 ]  [ a ] 
+ [ 48 ]  [ a ] 
+ [ 49 ]  [ a ] 
+ [ 50 ]  [ a ] 
+ [ 51 ]  [ a ] 
+ [ 52 ]  [ a ] 
+ [ 53 ]  [ a ] 
+ [ 54 ]  [ a ] 
+ [ 55 ]  [ a ] 
+ [ 56 ]  [ , ] 
+ [ 57 ]  [   ] 
+ [ 58 ]  [ t ] 
+ [ 59 ]  [ i ] 
+ [ 60 ]  [ p ] 
+ [ 61 ]  [ o ] 
+ [ 62 ]  [   ] 
+ [ 63 ]  [ H ] 
+ [ 64 ]  [ e ] 
+ [ 65 ]  [ l ] 
+ [ 66 ]  [ l ] 
+ [ 67 ]  [ o ] 
+ [ 68 ]  [   ] 
+ [ 69 ]  [ W ] 
+ [ 70 ]  [ o ] 
+ [ 71 ]  [ r ] 
+ [ 72 ]  [ l ] 
+ [ 73 ]  [ d ] 
+ [ 74 ]  [ ! ] 
+ [ 75 ]  [   ] 
+ [ 76 ]  [ p ] 
+ [ 77 ]  [ e ] 
+ [ 78 ]  [ r ] 
+ [ 79 ]  [ o ] 
+ [ 80 ]  [   ] 
+ [ 81 ]  [ u ] 
+ [ 82 ]  [ n ] 
+ [ 83 ]  [   ] 
+ [ 84 ]  [ p ] 
+ [ 85 ]  [ o ] 
+ [ 86 ]  [ c ] 
+ [ 87 ]  [ o ] 
+ [ 88 ]  [   ] 
+ [ 89 ]  [ m ] 
+ [ 90 ]  [ a ] 
+ [ 91 ]  [ s ] 
+ [ 92 ]  [   ] 
+ [ 93 ]  [ s ] 
+ [ 94 ]  [ e ] 
+ [ 95 ]  [ n ] 
+ [ 96 ]  [ c ] 
+ [ 97 ]  [ i ] 
+ [ 98 ]  [ l ] 
+ [ 99 ]  [ l ] 
+ [ 100 ]  [ o ] 
+ [ 101 ]  [ , ] 
+ [ 102 ]  [   ] 
+ [ 103 ]  [ s ] 
+ [ 104 ]  [ x ] 
+ [ 105 ]  [ x ] 
+ [ 106 ]  [ x ] 
+ [ 107 ]  [ x ] 
+ [ 108 ]  [ x ] 
+ [ 109 ]  [ x ] 
+ [ 110 ]  [ x ] 
+ [ 111 ]  [ x ] 
+ [ 112 ]  [ i ] 
+ [ 113 ]  [ n ] 
+ [ 114 ]  [   ] 
+ [ 115 ]  [ t ] 
+ [ 116 ]  [ i ] 
+ [ 117 ]  [ l ] 
+ [ 118 ]  [ d ] 
+ [ 119 ]  [ e ] 
+ [ 120 ]  [   ] 
+ [ 121 ]  [ p ] 
+ [ 122 ]  [ a ] 
+ [ 123 ]  [ r ] 
+ [ 124 ]  [ a ] 
+ [ 125 ]  [   ] 
+ [ 126 ]  [ e ] 
+ [ 127 ]  [ v ] 
+ [ 128 ]  [ i ] 
+ [ 129 ]  [ t ] 
+ [ 130 ]  [ a ] 
+ [ 131 ]  [ r ] 
+ [ 132 ]  [   ] 
+ [ 133 ]  [ z ] 
+ [ 134 ]  [ z ] 
+ [ 135 ]  [ z ] 
+ [ 136 ]  [ z ] 
+ [ 137 ]  [ z ] 
+ [ 138 ]  [ z ] 
+ [ 139 ]  [ z ] 
+ [ 140 ]  [ z ] 
+ [ 141 ]  [ z ] 
+ [ 142 ]  [ z ] 
+ [ 143 ]  [   ] 
+ [ 144 ]  [ z ] 
+ [ 145 ]  [ z ] 
+ [ 146 ]  [ z ] 
+ [ 147 ]  [ z ] 
+ [ 148 ]  [ z ] 
+ [ 149 ]  [ z ] 
+ [ 150 ]  [ z ] 
+ [ 151 ]  [ z ] 
+ [ 152 ]  [ z ] 
+ [ 153 ]  [ z ] 
+ [ 154 ]  [ z ] 
+ [ 155 ]  [   ] 
+ [ 156 ]  [ z ] 
+ [ 157 ]  [ z ] 
+ [ 158 ]  [   ] 
+ [ 159 ]  [ c ] 
+ [ 160 ]  [ h ] 
+ [ 161 ]  [ o ] 
+ [ 162 ]  [ q ] 
+ [ 163 ]  [ u ] 
+ [ 164 ]  [ e ] 
+ [ 165 ]  [ s ] 
+ [ 166 ]  [   ] 
+ [ 167 ]  [ a ] 
+ [ 168 ]  [ l ] 
+ [ 169 ]  [   ] 
+ [ 170 ]  [ i ] 
+ [ 171 ]  [ n ] 
+ [ 172 ]  [ i ] 
+ [ 173 ]  [ c ] 
+ [ 174 ]  [ i ] 
+ [ 175 ]  [ o ] 
+ [ 176 ]  [ , ] 
+ [ 177 ]  [   ] 
+ [ 178 ]  [ v ] 
+ [ 179 ]  [ e ] 
+ [ 180 ]  [ a ] 
+ [ 181 ]  [ m ] 
+ [ 182 ]  [ o ] 
+ [ 183 ]  [ s ] 
+ [ 184 ]  [   ] 
+ [ 185 ]  [ q ] 
+ [ 186 ]  [ u ] 
+ [ 187 ]  [ e ] 
+ [ 188 ]  [   ] 
+ [ 189 ]  [ s ] 
+ [ 190 ]  [ u ] 
+ [ 191 ]  [ c ] 
+ [ 192 ]  [ e ] 
+ [ 193 ]  [ d ] 
+ [ 194 ]  [ e ] 
+ [ 195 ]  [   ] 
+ [ 196 ]  [ e ] 
+ [ 197 ]  [ n ] 
+ [ 198 ]  [   ] 
+ [ 199 ]  [ e ] 
+ [ 200 ]  [ l ] 
+ [ 201 ]  [   ] 
+ [ 202 ]  [ s ] 
+ [ 203 ]  [ i ] 
+ [ 204 ]  [ g ] 
+ [ 205 ]  [ u ] 
+ [ 206 ]  [ i ] 
+ [ 207 ]  [ e ] 
+ [ 208 ]  [ n ] 
+ [ 209 ]  [ t ] 
+ [ 210 ]  [ e ] 
+ [ 211 ]  [   ] 
+ [ 212 ]  [ e ] 
+ [ 213 ]  [ p ] 
+ [ 214 ]  [ i ] 
+ [ 215 ]  [ s ] 
+ [ 216 ]  [ o ] 
+ [ 217 ]  [ d ] 
+ [ 218 ]  [ i ] 
+ [ 219 ]  [ o ] 
+ [ 220 ]  [ . ] 
+ [ 221 ]  [ . ] 
+ [ 222 ]  [ . ] 
+ [ 223 ]  [ 
+ ] 
+Tamaño : 224
+
+Creando Hojas de: 224Caracteres
+Vamos a hacer la tabla de valores repetidos
+Insertamos el siguiente Valor: E con la siguiente frecuencia: 1
+Insertamos el siguiente Valor: s con la siguiente frecuencia: 1
+Insertamos el siguiente Valor: t con la siguiente frecuencia: 1
+Insertamos el siguiente Valor: e con la siguiente frecuencia: 1
+Insertamos el siguiente Valor:   con la siguiente frecuencia: 1
+valor encontrado: e Frecuencia: 2
+valor encontrado: s Frecuencia: 2
+valor encontrado:   Frecuencia: 2
+Insertamos el siguiente Valor: u con la siguiente frecuencia: 1
+Insertamos el siguiente Valor: n con la siguiente frecuencia: 1
+valor encontrado:   Frecuencia: 3
+Insertamos el siguiente Valor: d con la siguiente frecuencia: 1
+Insertamos el siguiente Valor: o con la siguiente frecuencia: 1
+Insertamos el siguiente Valor: c con la siguiente frecuencia: 1
+valor encontrado: u Frecuencia: 2
+Insertamos el siguiente Valor: m con la siguiente frecuencia: 1
+valor encontrado: e Frecuencia: 3
+valor encontrado: n Frecuencia: 2
+valor encontrado: t Frecuencia: 2
+valor encontrado: o Frecuencia: 2
+valor encontrado:   Frecuencia: 4
+valor encontrado: d Frecuencia: 2
+valor encontrado: e Frecuencia: 4
+valor encontrado:   Frecuencia: 5
+Insertamos el siguiente Valor: p con la siguiente frecuencia: 1
+Insertamos el siguiente Valor: r con la siguiente frecuencia: 1
+valor encontrado: u Frecuencia: 3
+valor encontrado: e Frecuencia: 5
+Insertamos el siguiente Valor: b con la siguiente frecuencia: 1
+Insertamos el siguiente Valor: a con la siguiente frecuencia: 1
+valor encontrado: a Frecuencia: 2
+valor encontrado: a Frecuencia: 3
+valor encontrado: a Frecuencia: 4
+valor encontrado: a Frecuencia: 5
+valor encontrado: a Frecuencia: 6
+valor encontrado: a Frecuencia: 7
+valor encontrado: a Frecuencia: 8
+valor encontrado: a Frecuencia: 9
+valor encontrado: a Frecuencia: 10
+valor encontrado: a Frecuencia: 11
+valor encontrado: a Frecuencia: 12
+valor encontrado: a Frecuencia: 13
+valor encontrado: a Frecuencia: 14
+valor encontrado: a Frecuencia: 15
+valor encontrado: a Frecuencia: 16
+valor encontrado: a Frecuencia: 17
+valor encontrado: a Frecuencia: 18
+valor encontrado: a Frecuencia: 19
+valor encontrado: a Frecuencia: 20
+valor encontrado: a Frecuencia: 21
+valor encontrado: a Frecuencia: 22
+valor encontrado: a Frecuencia: 23
+valor encontrado: a Frecuencia: 24
+valor encontrado: a Frecuencia: 25
+valor encontrado: a Frecuencia: 26
+valor encontrado: a Frecuencia: 27
+Insertamos el siguiente Valor: , con la siguiente frecuencia: 1
+valor encontrado:   Frecuencia: 6
+valor encontrado: t Frecuencia: 3
+Insertamos el siguiente Valor: i con la siguiente frecuencia: 1
+valor encontrado: p Frecuencia: 2
+valor encontrado: o Frecuencia: 3
+valor encontrado:   Frecuencia: 7
+Insertamos el siguiente Valor: H con la siguiente frecuencia: 1
+valor encontrado: e Frecuencia: 6
+Insertamos el siguiente Valor: l con la siguiente frecuencia: 1
+valor encontrado: l Frecuencia: 2
+valor encontrado: o Frecuencia: 4
+valor encontrado:   Frecuencia: 8
+Insertamos el siguiente Valor: W con la siguiente frecuencia: 1
+valor encontrado: o Frecuencia: 5
+valor encontrado: r Frecuencia: 2
+valor encontrado: l Frecuencia: 3
+valor encontrado: d Frecuencia: 3
+Insertamos el siguiente Valor: ! con la siguiente frecuencia: 1
+valor encontrado:   Frecuencia: 9
+valor encontrado: p Frecuencia: 3
+valor encontrado: e Frecuencia: 7
+valor encontrado: r Frecuencia: 3
+valor encontrado: o Frecuencia: 6
+valor encontrado:   Frecuencia: 10
+valor encontrado: u Frecuencia: 4
+valor encontrado: n Frecuencia: 3
+valor encontrado:   Frecuencia: 11
+valor encontrado: p Frecuencia: 4
+valor encontrado: o Frecuencia: 7
+valor encontrado: c Frecuencia: 2
+valor encontrado: o Frecuencia: 8
+valor encontrado:   Frecuencia: 12
+valor encontrado: m Frecuencia: 2
+valor encontrado: a Frecuencia: 28
+valor encontrado: s Frecuencia: 3
+valor encontrado:   Frecuencia: 13
+valor encontrado: s Frecuencia: 4
+valor encontrado: e Frecuencia: 8
+valor encontrado: n Frecuencia: 4
+valor encontrado: c Frecuencia: 3
+valor encontrado: i Frecuencia: 2
+valor encontrado: l Frecuencia: 4
+valor encontrado: l Frecuencia: 5
+valor encontrado: o Frecuencia: 9
+valor encontrado: , Frecuencia: 2
+valor encontrado:   Frecuencia: 14
+valor encontrado: s Frecuencia: 5
+Insertamos el siguiente Valor: x con la siguiente frecuencia: 1
+valor encontrado: x Frecuencia: 2
+valor encontrado: x Frecuencia: 3
+valor encontrado: x Frecuencia: 4
+valor encontrado: x Frecuencia: 5
+valor encontrado: x Frecuencia: 6
+valor encontrado: x Frecuencia: 7
+valor encontrado: x Frecuencia: 8
+valor encontrado: i Frecuencia: 3
+valor encontrado: n Frecuencia: 5
+valor encontrado:   Frecuencia: 15
+valor encontrado: t Frecuencia: 4
+valor encontrado: i Frecuencia: 4
+valor encontrado: l Frecuencia: 6
+valor encontrado: d Frecuencia: 4
+valor encontrado: e Frecuencia: 9
+valor encontrado:   Frecuencia: 16
+valor encontrado: p Frecuencia: 5
+valor encontrado: a Frecuencia: 29
+valor encontrado: r Frecuencia: 4
+valor encontrado: a Frecuencia: 30
+valor encontrado:   Frecuencia: 17
+valor encontrado: e Frecuencia: 10
+Insertamos el siguiente Valor: v con la siguiente frecuencia: 1
+valor encontrado: i Frecuencia: 5
+valor encontrado: t Frecuencia: 5
+valor encontrado: a Frecuencia: 31
+valor encontrado: r Frecuencia: 5
+valor encontrado:   Frecuencia: 18
+Insertamos el siguiente Valor: z con la siguiente frecuencia: 1
+valor encontrado: z Frecuencia: 2
+valor encontrado: z Frecuencia: 3
+valor encontrado: z Frecuencia: 4
+valor encontrado: z Frecuencia: 5
+valor encontrado: z Frecuencia: 6
+valor encontrado: z Frecuencia: 7
+valor encontrado: z Frecuencia: 8
+valor encontrado: z Frecuencia: 9
+valor encontrado: z Frecuencia: 10
+valor encontrado:   Frecuencia: 19
+valor encontrado: z Frecuencia: 11
+valor encontrado: z Frecuencia: 12
+valor encontrado: z Frecuencia: 13
+valor encontrado: z Frecuencia: 14
+valor encontrado: z Frecuencia: 15
+valor encontrado: z Frecuencia: 16
+valor encontrado: z Frecuencia: 17
+valor encontrado: z Frecuencia: 18
+valor encontrado: z Frecuencia: 19
+valor encontrado: z Frecuencia: 20
+valor encontrado: z Frecuencia: 21
+valor encontrado:   Frecuencia: 20
+valor encontrado: z Frecuencia: 22
+valor encontrado: z Frecuencia: 23
+valor encontrado:   Frecuencia: 21
+valor encontrado: c Frecuencia: 4
+Insertamos el siguiente Valor: h con la siguiente frecuencia: 1
+valor encontrado: o Frecuencia: 10
+Insertamos el siguiente Valor: q con la siguiente frecuencia: 1
+valor encontrado: u Frecuencia: 5
+valor encontrado: e Frecuencia: 11
+valor encontrado: s Frecuencia: 6
+valor encontrado:   Frecuencia: 22
+valor encontrado: a Frecuencia: 32
+valor encontrado: l Frecuencia: 7
+valor encontrado:   Frecuencia: 23
+valor encontrado: i Frecuencia: 6
+valor encontrado: n Frecuencia: 6
+valor encontrado: i Frecuencia: 7
+valor encontrado: c Frecuencia: 5
+valor encontrado: i Frecuencia: 8
+valor encontrado: o Frecuencia: 11
+valor encontrado: , Frecuencia: 3
+valor encontrado:   Frecuencia: 24
+valor encontrado: v Frecuencia: 2
+valor encontrado: e Frecuencia: 12
+valor encontrado: a Frecuencia: 33
+valor encontrado: m Frecuencia: 3
+valor encontrado: o Frecuencia: 12
+valor encontrado: s Frecuencia: 7
+valor encontrado:   Frecuencia: 25
+valor encontrado: q Frecuencia: 2
+valor encontrado: u Frecuencia: 6
+valor encontrado: e Frecuencia: 13
+valor encontrado:   Frecuencia: 26
+valor encontrado: s Frecuencia: 8
+valor encontrado: u Frecuencia: 7
+valor encontrado: c Frecuencia: 6
+valor encontrado: e Frecuencia: 14
+valor encontrado: d Frecuencia: 5
+valor encontrado: e Frecuencia: 15
+valor encontrado:   Frecuencia: 27
+valor encontrado: e Frecuencia: 16
+valor encontrado: n Frecuencia: 7
+valor encontrado:   Frecuencia: 28
+valor encontrado: e Frecuencia: 17
+valor encontrado: l Frecuencia: 8
+valor encontrado:   Frecuencia: 29
+valor encontrado: s Frecuencia: 9
+valor encontrado: i Frecuencia: 9
+Insertamos el siguiente Valor: g con la siguiente frecuencia: 1
+valor encontrado: u Frecuencia: 8
+valor encontrado: i Frecuencia: 10
+valor encontrado: e Frecuencia: 18
+valor encontrado: n Frecuencia: 8
+valor encontrado: t Frecuencia: 6
+valor encontrado: e Frecuencia: 19
+valor encontrado:   Frecuencia: 30
+valor encontrado: e Frecuencia: 20
+valor encontrado: p Frecuencia: 6
+valor encontrado: i Frecuencia: 11
+valor encontrado: s Frecuencia: 10
+valor encontrado: o Frecuencia: 13
+valor encontrado: d Frecuencia: 6
+valor encontrado: i Frecuencia: 12
+valor encontrado: o Frecuencia: 14
+Insertamos el siguiente Valor: . con la siguiente frecuencia: 1
+valor encontrado: . Frecuencia: 2
+valor encontrado: . Frecuencia: 3
+Insertamos el siguiente Valor: 
+ con la siguiente frecuencia: 1
+Intentamos crear el Arbol: 
+HACE HOJAS!!!!!!!!!
+HACE NODOS HUFFMAN!!!!!!!!!
+FRECUENCIA:2
+ARME UN NODO HUFFMAN:  Con frecuencia de 2
+FRECUENCIA:2
+ARME UN NODO HUFFMAN:  Con frecuencia de 2
+FRECUENCIA:2
+ARME UN NODO HUFFMAN:  Con frecuencia de 2
+FRECUENCIA:2
+ARME UN NODO HUFFMAN:  Con frecuencia de 2
+FRECUENCIA:4
+ARME UN NODO HUFFMAN:  Con frecuencia de 4
+FRECUENCIA:6
+ARME UN NODO HUFFMAN:  Con frecuencia de 6
+FRECUENCIA:8
+ARME UN NODO HUFFMAN:  Con frecuencia de 8
+FRECUENCIA:12
+ARME UN NODO HUFFMAN:  Con frecuencia de 12
+FRECUENCIA:12
+ARME UN NODO HUFFMAN:  Con frecuencia de 12
+FRECUENCIA:16
+ARME UN NODO HUFFMAN:  Con frecuencia de 16
+FRECUENCIA:16
+ARME UN NODO HUFFMAN:  Con frecuencia de 16
+FRECUENCIA:22
+ARME UN NODO HUFFMAN:  Con frecuencia de 22
+FRECUENCIA:34
+ARME UN NODO HUFFMAN:  Con frecuencia de 34
+FRECUENCIA:53
+ARME UN NODO HUFFMAN:  Con frecuencia de 53
+FRECUENCIA:35
+ARME UN NODO HUFFMAN:  Con frecuencia de 35
+FRECUENCIA:4
+ARME UN NODO HUFFMAN:  Con frecuencia de 4
+FRECUENCIA:6
+ARME UN NODO HUFFMAN:  Con frecuencia de 6
+FRECUENCIA:14
+ARME UN NODO HUFFMAN:  Con frecuencia de 14
+FRECUENCIA:24
+ARME UN NODO HUFFMAN:  Con frecuencia de 24
+FRECUENCIA:32
+ARME UN NODO HUFFMAN:  Con frecuencia de 32
+FRECUENCIA:56
+ARME UN NODO HUFFMAN:  Con frecuencia de 56
+FRECUENCIA:88
+ARME UN NODO HUFFMAN:  Con frecuencia de 88
+FRECUENCIA:10
+ARME UN NODO HUFFMAN:  Con frecuencia de 10
+FRECUENCIA:38
+ARME UN NODO HUFFMAN:  Con frecuencia de 38
+FRECUENCIA:88
+ARME UN NODO HUFFMAN:  Con frecuencia de 88
+FRECUENCIA:98
+ARME UN NODO HUFFMAN:  Con frecuencia de 98
+FRECUENCIA:126
+ARME UN NODO HUFFMAN:  Con frecuencia de 126
+FRECUENCIA:224
+ARME UN NODO HUFFMAN:  Con frecuencia de 224
+Buscando este codigo de char E
+FOUND IT!!!
+00110
+00110
+Código de Huffmann creado: 00110
+Buscando este codigo de char s
+FOUND IT!!!
+11100
+11100
+Código de Huffmann creado: 11100
+Buscando este codigo de char t
+FOUND IT!!!
+10100
+10100
+Código de Huffmann creado: 10100
+Buscando este codigo de char e
+FOUND IT!!!
+11111
+11111
+Código de Huffmann creado: 11111
+Buscando este codigo de char  
+FOUND IT!!!
+0001
+0001
+Código de Huffmann creado: 0001
+Buscando este codigo de char u
+FOUND IT!!!
+11000
+11000
+Código de Huffmann creado: 11000
+Buscando este codigo de char n
+FOUND IT!!!
+11001
+11001
+Código de Huffmann creado: 11001
+Buscando este codigo de char d
+FOUND IT!!!
+10101
+10101
+Código de Huffmann creado: 10101
+Buscando este codigo de char o
+FOUND IT!!!
+11110
+11110
+Código de Huffmann creado: 11110
+Buscando este codigo de char c
+FOUND IT!!!
+10110
+10110
+Código de Huffmann creado: 10110
+Buscando este codigo de char m
+FOUND IT!!!
+10000
+10000
+Código de Huffmann creado: 10000
+Buscando este codigo de char p
+FOUND IT!!!
+10111
+10111
+Código de Huffmann creado: 10111
+Buscando este codigo de char r
+FOUND IT!!!
+10011
+10011
+Código de Huffmann creado: 10011
+Buscando este codigo de char b
+FOUND IT!!!
+00111
+00111
+Código de Huffmann creado: 00111
+Buscando este codigo de char a
+FOUND IT!!!
+0010
+0010
+Código de Huffmann creado: 0010
+Buscando este codigo de char ,
+FOUND IT!!!
+10001
+10001
+Código de Huffmann creado: 10001
+Buscando este codigo de char i
+FOUND IT!!!
+11101
+11101
+Código de Huffmann creado: 11101
+Buscando este codigo de char H
+FOUND IT!!!
+01000
+01000
+Código de Huffmann creado: 01000
+Buscando este codigo de char l
+FOUND IT!!!
+11010
+11010
+Código de Huffmann creado: 11010
+Buscando este codigo de char W
+FOUND IT!!!
+01001
+01001
+Código de Huffmann creado: 01001
+Buscando este codigo de char !
+FOUND IT!!!
+01010
+01010
+Código de Huffmann creado: 01010
+Buscando este codigo de char x
+FOUND IT!!!
+11011
+11011
+Código de Huffmann creado: 11011
+Buscando este codigo de char v
+FOUND IT!!!
+01110
+01110
+Código de Huffmann creado: 01110
+Buscando este codigo de char z
+FOUND IT!!!
+0000
+0000
+Código de Huffmann creado: 0000
+Buscando este codigo de char h
+FOUND IT!!!
+01011
+01011
+Código de Huffmann creado: 01011
+Buscando este codigo de char q
+FOUND IT!!!
+01111
+01111
+Código de Huffmann creado: 01111
+Buscando este codigo de char g
+FOUND IT!!!
+01100
+01100
+Código de Huffmann creado: 01100
+Buscando este codigo de char .
+FOUND IT!!!
+10010
+10010
+Código de Huffmann creado: 10010
+Buscando este codigo de char 
+
+FOUND IT!!!
+01101
+01101
+Código de Huffmann creado: 01101
+Prueba de SUMA: 224
+Prueba de Valor:0
+creamos el UN SOLO NODO!!! 
+ SEARCHING: Este es un documento de pruebaaaaaaaaaaaaaaaaaaaaaaaaaaa, tipo Hello World! pero un poco mas sencillo, sxxxxxxxxin tilde para evitar zzzzzzzzzz zzzzzzzzzzz zz choques al inicio, veamos que sucede en el siguiente episodio...
+
+FOUND IT!!!
+00110
+FOUND IT!!!
+11100
+FOUND IT!!!
+10100
+FOUND IT!!!
+11111
+FOUND IT!!!
+0001
+FOUND IT!!!
+11111
+FOUND IT!!!
+11100
+FOUND IT!!!
+0001
+FOUND IT!!!
+11000
+FOUND IT!!!
+11001
+FOUND IT!!!
+0001
+FOUND IT!!!
+10101
+FOUND IT!!!
+11110
+FOUND IT!!!
+10110
+FOUND IT!!!
+11000
+FOUND IT!!!
+10000
+FOUND IT!!!
+11111
+FOUND IT!!!
+11001
+FOUND IT!!!
+10100
+FOUND IT!!!
+11110
+FOUND IT!!!
+0001
+FOUND IT!!!
+10101
+FOUND IT!!!
+11111
+FOUND IT!!!
+0001
+FOUND IT!!!
+10111
+FOUND IT!!!
+10011
+FOUND IT!!!
+11000
+FOUND IT!!!
+11111
+FOUND IT!!!
+00111
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+0010
+FOUND IT!!!
+10001
+FOUND IT!!!
+0001
+FOUND IT!!!
+10100
+FOUND IT!!!
+11101
+FOUND IT!!!
+10111
+FOUND IT!!!
+11110
+FOUND IT!!!
+0001
+FOUND IT!!!
+01000
+FOUND IT!!!
+11111
+FOUND IT!!!
+11010
+FOUND IT!!!
+11010
+FOUND IT!!!
+11110
+FOUND IT!!!
+0001
+FOUND IT!!!
+01001
+FOUND IT!!!
+11110
+FOUND IT!!!
+10011
+FOUND IT!!!
+11010
+FOUND IT!!!
+10101
+FOUND IT!!!
+01010
+FOUND IT!!!
+0001
+FOUND IT!!!
+10111
+FOUND IT!!!
+11111
+FOUND IT!!!
+10011
+FOUND IT!!!
+11110
+FOUND IT!!!
+0001
+FOUND IT!!!
+11000
+FOUND IT!!!
+11001
+FOUND IT!!!
+0001
+FOUND IT!!!
+10111
+FOUND IT!!!
+11110
+FOUND IT!!!
+10110
+FOUND IT!!!
+11110
+FOUND IT!!!
+0001
+FOUND IT!!!
+10000
+FOUND IT!!!
+0010
+FOUND IT!!!
+11100
+FOUND IT!!!
+0001
+FOUND IT!!!
+11100
+FOUND IT!!!
+11111
+FOUND IT!!!
+11001
+FOUND IT!!!
+10110
+FOUND IT!!!
+11101
+FOUND IT!!!
+11010
+FOUND IT!!!
+11010
+FOUND IT!!!
+11110
+FOUND IT!!!
+10001
+FOUND IT!!!
+0001
+FOUND IT!!!
+11100
+FOUND IT!!!
+11011
+FOUND IT!!!
+11011
+FOUND IT!!!
+11011
+FOUND IT!!!
+11011
+FOUND IT!!!
+11011
+FOUND IT!!!
+11011
+FOUND IT!!!
+11011
+FOUND IT!!!
+11011
+FOUND IT!!!
+11101
+FOUND IT!!!
+11001
+FOUND IT!!!
+0001
+FOUND IT!!!
+10100
+FOUND IT!!!
+11101
+FOUND IT!!!
+11010
+FOUND IT!!!
+10101
+FOUND IT!!!
+11111
+FOUND IT!!!
+0001
+FOUND IT!!!
+10111
+FOUND IT!!!
+0010
+FOUND IT!!!
+10011
+FOUND IT!!!
+0010
+FOUND IT!!!
+0001
+FOUND IT!!!
+11111
+FOUND IT!!!
+01110
+FOUND IT!!!
+11101
+FOUND IT!!!
+10100
+FOUND IT!!!
+0010
+FOUND IT!!!
+10011
+FOUND IT!!!
+0001
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0001
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0001
+FOUND IT!!!
+0000
+FOUND IT!!!
+0000
+FOUND IT!!!
+0001
+FOUND IT!!!
+10110
+FOUND IT!!!
+01011
+FOUND IT!!!
+11110
+FOUND IT!!!
+01111
+FOUND IT!!!
+11000
+FOUND IT!!!
+11111
+FOUND IT!!!
+11100
+FOUND IT!!!
+0001
+FOUND IT!!!
+0010
+FOUND IT!!!
+11010
+FOUND IT!!!
+0001
+FOUND IT!!!
+11101
+FOUND IT!!!
+11001
+FOUND IT!!!
+11101
+FOUND IT!!!
+10110
+FOUND IT!!!
+11101
+FOUND IT!!!
+11110
+FOUND IT!!!
+10001
+FOUND IT!!!
+0001
+FOUND IT!!!
+01110
+FOUND IT!!!
+11111
+FOUND IT!!!
+0010
+FOUND IT!!!
+10000
+FOUND IT!!!
+11110
+FOUND IT!!!
+11100
+FOUND IT!!!
+0001
+FOUND IT!!!
+01111
+FOUND IT!!!
+11000
+FOUND IT!!!
+11111
+FOUND IT!!!
+0001
+FOUND IT!!!
+11100
+FOUND IT!!!
+11000
+FOUND IT!!!
+10110
+FOUND IT!!!
+11111
+FOUND IT!!!
+10101
+FOUND IT!!!
+11111
+FOUND IT!!!
+0001
+FOUND IT!!!
+11111
+FOUND IT!!!
+11001
+FOUND IT!!!
+0001
+FOUND IT!!!
+11111
+FOUND IT!!!
+11010
+FOUND IT!!!
+0001
+FOUND IT!!!
+11100
+FOUND IT!!!
+11101
+FOUND IT!!!
+01100
+FOUND IT!!!
+11000
+FOUND IT!!!
+11101
+FOUND IT!!!
+11111
+FOUND IT!!!
+11001
+FOUND IT!!!
+10100
+FOUND IT!!!
+11111
+FOUND IT!!!
+0001
+FOUND IT!!!
+11111
+FOUND IT!!!
+10111
+FOUND IT!!!
+11101
+FOUND IT!!!
+11100
+FOUND IT!!!
+11110
+FOUND IT!!!
+10101
+FOUND IT!!!
+11101
+FOUND IT!!!
+11110
+FOUND IT!!!
+10010
+FOUND IT!!!
+10010
+FOUND IT!!!
+10010
+FOUND IT!!!
+01101
+FRASE SECRETA !!!! 
+00110111001010011111000111111111000001110001100100011010111110101101100010000111111100110100111100001101011111100011011110011110001111100111001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010100010001101001110110111111100001010001111111010110101111000010100111110100111101010101010100001101111111110011111100001110001100100011011111110101101111000011000000101110000011110011111110011011011101110101101011110100010001111001101111011110111101111011110111101111011111011100100011010011101110101010111111000110111001010011001000011111101110111011010000101001100010000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000100000000000110110010111111001111110001111111100000100101101000011110111001111011011011101111101000100010111011111001010000111101110000010111111000111110001111001100010110111111010111111000111111110010001111111101000011110011101011001100011101111111100110100111110001111111011111101111001111010101111011111010010100101001001101
+Este es un documento de pruebaaaaaaaaaaaaaaaaaaaaaaaaaaa, tipo Hello World! pero un poco mas sencillo, sxxxxxxxxin tilde para evitar zzzzzzzzzz zzzzzzzzzzz zz choques al inicio, veamos que sucede en el siguiente episodio...
+
+
+Algoritmos sobre Arboles
+1. Codificador de Huffman
+2. Decodificador de Huffman
+3. Regresar al Menu Principal
+
+Menú Principal
+1. Algoritmos sobre Arboles
+2. Algoritmos sobre Grafos
+3. Salir

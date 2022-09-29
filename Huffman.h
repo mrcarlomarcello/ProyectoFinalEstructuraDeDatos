@@ -24,8 +24,8 @@ class Huffman : public  TDAArbol{
         virtual int getSize();
         virtual NodoArbol* creaArbol();
         virtual string BusquedaProfunda(NodoArbol*,string);
-        virtual void imprimirFrase(NodoArbol*, string);
-        virtual string ArmarCodigo(NodoArbol*,string);
+        virtual void decodificadorHuffman(NodoArbol*, string);
+        virtual string codificarTexto(NodoArbol*,string);
     private:
         string frase;
         string generatingCode;

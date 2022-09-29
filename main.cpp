@@ -54,31 +54,24 @@ int main(int argc, char** argv) {
 
                             //creamos hojas Huffman aquí
                             string textovirtual = huffman->crearHojas(texto);
-
-
                             cout << "Intentamos crear el Arbol: " << endl;
-
                             NodoArbol* huffmanTree = huffman->creaArbol();
+                            //creamos hojas Huffman aquí
+
                             //Sumatoria final prueba de compresion
                             Simbolo* pruebaDeSuma = (Simbolo*)huffmanTree->getItem();
-
-                            cout << "Prueba de SUMA: " << pruebaDeSuma->getFreq() << endl;
-                            cout << "Prueba de Valor:" << pruebaDeSuma->getSimbolo() << endl;
-
-                            cout << "creamos el UN SOLO NODO!!! " << endl;
-
+                            cout << "PRUEBA DE SUMA DE FRECUENCIAS EN RAIZ: " << pruebaDeSuma->getFreq() << endl;
+                            cout << "PRUEBA DE VALOR EN RAIZ:               " << pruebaDeSuma->getSimbolo() << endl;
+                            cout << "creamos el UN SOLO NODO EXITOSAMENTE!!! " << endl;
+                            //Sumatoria final prueba de compresion
 
 
                             // vamos a crear la frase HUffman
-                            cout << " SEARCHING: "<< textovirtual << endl;
-                            string fraseSecretaHuffman = huffman->ArmarCodigo(huffmanTree, textovirtual);
-
-                            cout << "FRASE SECRETA !!!! " << endl;
-
-                            cout <<fraseSecretaHuffman <<endl;
-
-                            huffman->imprimirFrase(huffmanTree , fraseSecretaHuffman);
-
+                            cout << " Codificando el siguiente mensaje: "<< endl << textovirtual << endl;
+                            string fraseSecretaHuffman = huffman->codificarTexto(huffmanTree, textovirtual);
+                            cout << endl<< "FRASE SECRETA !!!! " << endl;
+                            cout <<fraseSecretaHuffman <<endl << endl;
+                            huffman->decodificadorHuffman(huffmanTree , fraseSecretaHuffman);
                             seguir = true;
 							break;	
 						}
