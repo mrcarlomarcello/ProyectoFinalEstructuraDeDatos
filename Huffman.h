@@ -19,14 +19,16 @@ class Huffman : public  TDAArbol{
     public:
         Huffman();
         virtual int contarCaracteres(string);
-        virtual bool crearHojas(string);
+        virtual string crearHojas(string);
         virtual void imprimirHojas();
         virtual int getSize();
         virtual NodoArbol* creaArbol();
-        virtual bool BusquedaProfunda(NodoArbol*,string);
-
+        virtual string BusquedaProfunda(NodoArbol*,string);
+        virtual void imprimirFrase(NodoArbol*, string);
+        virtual string ArmarCodigo(NodoArbol*,string);
     private:
         string frase;
+        string generatingCode;
         string codeGenerated;
         LinkedList* hojasHuffman;
         int size;

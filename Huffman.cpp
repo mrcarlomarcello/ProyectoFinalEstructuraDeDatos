@@ -28,7 +28,7 @@ int Huffman::contarCaracteres(string _input) {
 
 }
 
-bool Huffman::crearHojas(string _input) {
+string Huffman::crearHojas(string _input) {
 
     cout << "Creando Hojas de: " << _input.length() << "Caracteres" << endl;
     cout << "Vamos a hacer la tabla de valores repetidos" << endl;
@@ -73,7 +73,7 @@ bool Huffman::crearHojas(string _input) {
         }
     }
 
-    return true;
+    return _input;
 
 }
 
@@ -127,7 +127,6 @@ NodoArbol* Huffman::creaArbol() {
     cout << "HACE NODOS HUFFMAN!!!!!!!!!" << endl;
 
     //tenemos huffmanTree de puras hojas - Hace un solo nodo de todos los Nodos pt2.
-
     do{
         NodoArbol* nodoArbolTemporal1 = (NodoArbol*)huffmanTree->saca_de_cola();
 
@@ -155,18 +154,21 @@ NodoArbol* Huffman::creaArbol() {
 
         }else{
             cout << "OJO ___ UBICACION DE LISTA DE CARACTERES!!!!!!!!!" << endl;
-            //this->hojasHuffman->imprimir_lista();
+            this->hojasHuffman->imprimir_lista();
 
             // Imprimir Codigos
             Nodo* prueba2 = this->hojasHuffman->getInicio();
+
             do{
                 this->codeGenerated = "";
                 string texto = prueba2->getItem()->toString();
                 cout << "Buscando este codigo de char " << texto << endl;
-                BusquedaProfunda(nodoArbolTemporal1, texto);
+                string s = BusquedaProfunda(nodoArbolTemporal1, texto);
                 cout << this->codeGenerated << endl;
+                cout << "Código de Huffmann creado: " << s << endl;
                 prueba2 = prueba2->getSiguiente();
-            }while(!prueba2);
+
+            }while(prueba2!=NULL);
 
 
             return nodoArbolTemporal1;
@@ -180,26 +182,74 @@ NodoArbol* Huffman::creaArbol() {
 
 }
 
-bool Huffman::BusquedaProfunda(NodoArbol* arbolTemp, string _char){
+string Huffman::BusquedaProfunda(NodoArbol* arbolTemp, string _char){
 
-    if( !arbolTemp->getHijoIzquierdo() ){
-        this->codeGenerated.append("0");
+    cout << "Prueba de Char Recibido: " << _char << endl;
+    if( arbolTemp->getHijoIzquierdo() ){
+        this->generatingCode.append("0");
         BusquedaProfunda(arbolTemp->getHijoIzquierdo(), _char);
-        this->codeGenerated.pop_back();
+        this->generatingCode.pop_back();
     }
 
-    if( !arbolTemp->getHijoDerecho() ){
-        this->codeGenerated.append("1");
+    if( arbolTemp->getHijoDerecho() ){
+        this->generatingCode.append("1");
         BusquedaProfunda(arbolTemp->getHijoDerecho(), _char);
-        this->codeGenerated.pop_back();
+        this->generatingCode.pop_back();
     }
     Simbolo* compara = (Simbolo*)arbolTemp->getItem();
     //determinar si es hoja con hijos vacios
-    if(!arbolTemp->getHijoIzquierdo() && !arbolTemp->getHijoDerecho())
+    if(arbolTemp->getHijoIzquierdo() == NULL && arbolTemp->getHijoDerecho() == NULL){
         if(compara->toString() == _char)  // <<<<<---- OJO AQUI CON ESE OBJETO
+        {
             cout << "FOUND IT!!!" << endl;
-            return true;
+            cout << this->generatingCode << endl;
+            this->codeGenerated = this->generatingCode;
+            return this->codeGenerated;
+        }
 
-    return false;
+    }
+    return this->codeGenerated;
 
+}
+
+void Huffman::imprimirFrase(NodoArbol* _Arbol, string secreto){
+    NodoArbol* temp = _Arbol;
+
+    for (int i = secreto.length()-1; i >=0 ; --i) {
+
+        if(secreto[i] == '0'){
+            temp = temp->getHijoIzquierdo();
+
+            if( temp->getHijoIzquierdo() == NULL && temp->getHijoDerecho() == NULL){
+                Simbolo* temporal = (Simbolo*)temp->getItem();
+                cout << temporal->getSimbolo() << endl;
+                temp = _Arbol;
+            }
+
+        }
+
+
+        if(secreto[i] == '1')
+        {
+            temp = temp->getHijoDerecho();
+            if( temp->getHijoIzquierdo() == NULL && temp->getHijoDerecho() == NULL){
+                Simbolo* temporal = (Simbolo*)temp->getItem();
+                cout << temporal->getSimbolo() << endl;
+                temp = _Arbol;
+            }
+        }
+
+    }
+
+}
+
+string Huffman::ArmarCodigo(NodoArbol * _Arbol, string _texto) {
+
+    string codigoSecreto = "A";
+    for (int i = 0; i < _texto.length(); ++i) {
+        //string temp = string(_texto[i]);
+        cout << "QUE PASA???" << _texto << endl;
+        //codigoSecreto += BusquedaProfunda(_Arbol, (string)_texto[i]);
+    }
+    return codigoSecreto;
 }

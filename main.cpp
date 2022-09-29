@@ -46,25 +46,42 @@ int main(int argc, char** argv) {
 						{
 							//code
                             cout << endl;
-                            //string prueba = util.leerArchivo("prueba.txt");
-                            string prueba = util.leerArchivo("testcorto.txt");
-                            int tam = huffman->contarCaracteres(prueba);
+                            //string texto = util.leerArchivo("prueba.txt");
+                            string texto = util.leerArchivo("testcorto.txt");
+                            int tam = huffman->contarCaracteres(texto);
                             cout << "Tamaño : " << tam << endl;
                             cout << endl;
 
-                            huffman->crearHojas(prueba);
+                            //creamos hojas Huffman aquí
+                            string textovirtual = huffman->crearHojas(texto);
+
 
                             cout << "Intentamos crear el Arbol: " << endl;
 
                             NodoArbol* huffmanTree = huffman->creaArbol();
-
+                            //Sumatoria final prueba de compresion
                             Simbolo* pruebaDeSuma = (Simbolo*)huffmanTree->getItem();
 
                             cout << "Prueba de SUMA: " << pruebaDeSuma->getFreq() << endl;
                             cout << "Prueba de Valor:" << pruebaDeSuma->getSimbolo() << endl;
 
                             cout << "creamos el UN SOLO NODO!!! " << endl;
-							seguir = true;
+
+
+
+                            // vamos a crear la frase HUffman
+                            cout << " SEARCHING: "<< textovirtual << endl;
+                            string fraseSecretaHuffman = huffman->ArmarCodigo(huffmanTree, textovirtual);
+
+                            cout << "FRASE SECRETA !!!! " << endl;
+
+                            cout <<fraseSecretaHuffman <<endl;
+
+                            huffman->imprimirFrase(huffmanTree , fraseSecretaHuffman);
+
+
+
+                            seguir = true;
 							break;	
 						}
 						case 2:
