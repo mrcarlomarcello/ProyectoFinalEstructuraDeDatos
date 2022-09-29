@@ -12,6 +12,9 @@
 #include "NodoArbol.h"
 #include "LinkedQueue.h"
 
+#include <string>
+using std::string;
+
 class Huffman : public  TDAArbol{
     public:
         Huffman();
@@ -20,9 +23,11 @@ class Huffman : public  TDAArbol{
         virtual void imprimirHojas();
         virtual int getSize();
         virtual NodoArbol* creaArbol();
+        virtual bool BusquedaProfunda(NodoArbol*,string);
 
     private:
         string frase;
+        string codeGenerated;
         LinkedList* hojasHuffman;
         int size;
         int maxFreq;

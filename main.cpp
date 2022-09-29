@@ -46,22 +46,24 @@ int main(int argc, char** argv) {
 						{
 							//code
                             cout << endl;
-                            string prueba = util.leerArchivo("prueba.txt");
+                            //string prueba = util.leerArchivo("prueba.txt");
+                            string prueba = util.leerArchivo("testcorto.txt");
                             int tam = huffman->contarCaracteres(prueba);
                             cout << "Tamaño : " << tam << endl;
-                            cout << prueba << endl;
                             cout << endl;
-                            cout << "Funcionó?" << endl;
 
                             huffman->crearHojas(prueba);
 
-                            cout << "Estos son los nodos creados: " << huffman->getSize() << endl;
-                            //huffman->imprimirHojas();
-
-                            cout << "creamos el Arbol: " << endl;
+                            cout << "Intentamos crear el Arbol: " << endl;
 
                             NodoArbol* huffmanTree = huffman->creaArbol();
 
+                            Simbolo* pruebaDeSuma = (Simbolo*)huffmanTree->getItem();
+
+                            cout << "Prueba de SUMA: " << pruebaDeSuma->getFreq() << endl;
+                            cout << "Prueba de Valor:" << pruebaDeSuma->getSimbolo() << endl;
+
+                            cout << "creamos el UN SOLO NODO!!! " << endl;
 							seguir = true;
 							break;	
 						}

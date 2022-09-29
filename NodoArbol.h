@@ -11,7 +11,9 @@ class NodoArbol : public Object
 	public:
 		NodoArbol();
 		~NodoArbol();
-		
+
+        bool equals(Object*);
+        string toString();
 		void setHijoIzquierdo(NodoArbol*);
 		void setHijoDerecho(NodoArbol*);
 		void setItem(Object*);

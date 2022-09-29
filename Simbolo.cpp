@@ -12,8 +12,6 @@ bool Simbolo::equals(Object* item){}
 
 string  Simbolo::toString() {
     temp = this->simbolo;
-    //temp.append(" freq : ");
-    //temp.append(to_string(this->freq));
     return temp;
 }
 

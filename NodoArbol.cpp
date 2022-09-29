@@ -21,6 +21,11 @@ NodoArbol::~NodoArbol()
 		delete item;
 }
 
+bool NodoArbol::equals(Object* item){}
+
+string  NodoArbol::toString() {
+}
+
 void NodoArbol::setHijoIzquierdo (NodoArbol* newIzquierdo){
 	this->hijoIzquierdo = newIzquierdo;
 }
