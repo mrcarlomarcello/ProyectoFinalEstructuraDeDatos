@@ -79,8 +79,6 @@ int main(int argc, char** argv) {
 
                             huffman->imprimirFrase(huffmanTree , fraseSecretaHuffman);
 
-
-
                             seguir = true;
 							break;	
 						}

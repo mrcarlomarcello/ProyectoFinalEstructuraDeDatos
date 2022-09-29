@@ -215,41 +215,37 @@ string Huffman::BusquedaProfunda(NodoArbol* arbolTemp, string _char){
 void Huffman::imprimirFrase(NodoArbol* _Arbol, string secreto){
     NodoArbol* temp = _Arbol;
 
-    for (int i = secreto.length()-1; i >=0 ; --i) {
+    for (int i = 0; i < secreto.length() ; ++i) {
 
         if(secreto[i] == '0'){
             temp = temp->getHijoIzquierdo();
-
-            if( temp->getHijoIzquierdo() == NULL && temp->getHijoDerecho() == NULL){
-                Simbolo* temporal = (Simbolo*)temp->getItem();
-                cout << temporal->getSimbolo() << endl;
-                temp = _Arbol;
-            }
-
         }
 
 
         if(secreto[i] == '1')
         {
             temp = temp->getHijoDerecho();
-            if( temp->getHijoIzquierdo() == NULL && temp->getHijoDerecho() == NULL){
-                Simbolo* temporal = (Simbolo*)temp->getItem();
-                cout << temporal->getSimbolo() << endl;
-                temp = _Arbol;
-            }
+        }
+
+        if( temp->getHijoIzquierdo() == NULL && temp->getHijoDerecho() == NULL){
+            Simbolo* temporal = (Simbolo*)temp->getItem();
+            cout << temporal->getSimbolo();
+            temp = _Arbol;
         }
 
     }
+    
+    cout << endl;
 
 }
 
 string Huffman::ArmarCodigo(NodoArbol * _Arbol, string _texto) {
 
-    string codigoSecreto = "A";
+    string codigoSecreto = "";
     for (int i = 0; i < _texto.length(); ++i) {
-        //string temp = string(_texto[i]);
-        cout << "QUE PASA???" << _texto << endl;
-        //codigoSecreto += BusquedaProfunda(_Arbol, (string)_texto[i]);
+        string temp = "";
+        temp += (_texto[i]);
+        codigoSecreto += BusquedaProfunda(_Arbol, temp);
     }
     return codigoSecreto;
 }
